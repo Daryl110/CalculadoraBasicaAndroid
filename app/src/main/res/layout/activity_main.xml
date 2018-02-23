@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.eam.calculadora.calculadora.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="26dp"
+            tools:layout_editor_absoluteY="16dp">
+
+            <EditText
+                android:id="@+id/txtNumero1"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:ems="10"
+                android:hint="ingrese un numero"
+                android:inputType="number"
+                android:textSize="24sp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="55dp"
+                tools:layout_editor_absoluteY="305dp" />
+
+            <EditText
+                android:id="@+id/txtNumero2"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:ems="10"
+                android:hint="ingrese un numero"
+                android:inputType="number"
+                android:textSize="24sp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="55dp"
+                tools:layout_editor_absoluteY="372dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="44dp"
+            tools:layout_editor_absoluteY="193dp">
+
+            <Button
+                android:id="@+id/btnMultiplicacion"
+                style="?android:attr/button"
+                android:layout_width="138dp"
+                android:layout_height="59dp"
+                android:layout_weight="1"
+                android:text="multiplicar"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="212dp"
+                tools:layout_editor_absoluteY="416dp" />
+
+            <Button
+                android:id="@+id/btnResta"
+                style="?android:attr/button"
+                android:layout_width="142dp"
+                android:layout_height="59dp"
+                android:layout_weight="1"
+                android:text="restar"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="121dp"
+                tools:layout_editor_absoluteY="376dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="44dp"
+            tools:layout_editor_absoluteY="129dp">
+
+            <Button
+                android:id="@+id/btnDivision"
+                style="?android:attr/button"
+                android:layout_width="141dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="dividir"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="44dp"
+                tools:layout_editor_absoluteY="335dp" />
+
+            <Button
+                android:id="@+id/btnSuma"
+                style="?android:attr/button"
+                android:layout_width="144dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:text="sumar"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="44dp"
+                tools:layout_editor_absoluteY="285dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
